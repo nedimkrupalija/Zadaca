@@ -1,6 +1,9 @@
 package ba.unsa.etf.rpr;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import ba.unsa.etf.rpr.ExpressionEvaluator;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
@@ -12,27 +15,40 @@ import org.junit.jupiter.api.function.Executable;
 
 class ExpressionEvaluatorTest {
 
-
-
-
     /**
-     * Tests for function accuracy
+     * Tests for result accuracy
      */
     @Test
     void evaluateTest1(){
-        assertEquals(101.0,new ExpressionEvaluator().evaluate("( 1 + ( ( 2 + 3 ) * ( 4 * 5 ) ) )"));
+        Assertions.assertEquals(101.0,new ExpressionEvaluator().evaluate("( 1 + ( ( 2 + 3 ) * ( 4 * 5 ) ) )"));
     }
+
+    /**
+     * Testing function for real numbers
+     */
     @Test
     void evaluateTest2(){
-        assertEquals(1.0,new ExpressionEvaluator().evaluate("( ( ( ( 2 + 4 * 9 ) * ( 6 + 9 * 8 + 6 ) + 6 ) + ( 2 + 4 * 2 ) ) )"));
+        Assertions.assertEquals(-46.3125, new ExpressionEvaluator().evaluate("( 1.5 + ( ( 25.5 / 2 ) * ( 1.25 - 5 ) ) )"));
+    }
+
+    /**
+     * Test for sqrt function
+     */
+    @Test
+    void sqrtTest(){
+        Assertions.assertEquals(10.5,new ExpressionEvaluator().evaluate("( sqrt ( 64 ) + ( ( sqrt ( 25 ) / 2 ) ) )"));
     }
 
     /**
      * Few different test cases for exception throwing
      */
+
+    /**
+     * Checking if there is operand before operator
+     */
     @Test
     void exception1() {
-        assertThrows(RuntimeException.class, new Executable() {
+        Assertions.assertThrows(RuntimeException.class, new Executable() {
             @Override
             public void execute() throws Throwable {
                 new ExpressionEvaluator().evaluate("( + 8 )");
@@ -40,33 +56,70 @@ class ExpressionEvaluatorTest {
         });
     }
 
-        @Test
-        void exception2() {
-            assertThrows(RuntimeException.class, new Executable() {
-                @Override
-                public void execute() throws Throwable {
-                    new ExpressionEvaluator().evaluate("(( 9 + 8 ) )");
-                }
+    /**
+     * Checking spacing between operators/operand
+     */
+    @Test
+    void exception2() {
+        Assertions.assertThrows(RuntimeException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                new ExpressionEvaluator().evaluate("(( 9 + 8 ) )");
+            }
 
-            });
-        }
-            @Test
-            void exception3() {
-                assertThrows(RuntimeException.class, new Executable() {
-                    @Override
-                    public void execute() throws Throwable{
-                        new ExpressionEvaluator().evaluate("( ( ( 9 + 8 ) )");
-                    }
-                });
+        });
     }
+
+    /**
+     * Checking for unequal number of brackets
+     */
+    @Test
+    void exception3() {
+        Assertions.assertThrows(RuntimeException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable{
+                new ExpressionEvaluator().evaluate("( ( ( 9 + 8 ) )");
+            }
+        });
+    }
+
+    /**
+     * Checking unknown operatos
+     */
     @Test
     void exception4() {
-        assertThrows(RuntimeException.class, new Executable() {
+        Assertions.assertThrows(RuntimeException.class, new Executable() {
             @Override
             public void execute() throws Throwable {
                 new ExpressionEvaluator().evaluate("( abc + 8 )");
             }
 
+        });
+    }
+
+    /**
+     * Checking for multiple operands per set of brackets
+     */
+    @Test
+    void exception5(){
+        Assertions.assertThrows(RuntimeException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                new ExpressionEvaluator().evaluate("( ( ( ( 2 + 4 * 9 ) * ( 6 + 9 * 8 + 6 ) + 6 ) + ( 2 + 4 * 2 ) ) )");
+            }
+        });
+    }
+
+    /**
+     * Exception test for sqrt function
+     */
+    @Test
+    void exception6(){
+        Assertions.assertThrows(RuntimeException.class, new Executable(){
+            @Override
+            public void execute() throws Throwable{
+                new ExpressionEvaluator().evaluate("( sqrt ( 5 + 2 ) )");
+            }
         });
     }
 }

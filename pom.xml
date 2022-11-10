@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>ba.unsa.etf.rpr</groupId>
     <artifactId>Djikstra</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>Ver-1.1</version>
     <dependencies>
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -25,18 +25,7 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
+
 
     </dependencies>
 
@@ -52,6 +41,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.3.0</version>
+
                 <configuration>
                     <archive>
                         <manifest>
@@ -61,8 +51,14 @@
                     </archive>
                 </configuration>
             </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M5</version>
+                    </plugin>
         </plugins>
     </build>
+
 
 
 

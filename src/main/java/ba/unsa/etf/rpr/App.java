@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
         Stack<String> operators = new Stack<String>();
         Stack<Double> values = new Stack<Double>();
-        String input = "( 1 + ( ( 2 + 3 ) * ( 4 * 5 ) ) )";
+        String input = "( 1 + sqrt ( 5.23 ) )";
 
         ExpressionEvaluator evaluator = new ExpressionEvaluator();
         try {
