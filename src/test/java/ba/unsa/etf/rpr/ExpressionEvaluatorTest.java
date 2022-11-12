@@ -32,11 +32,19 @@ class ExpressionEvaluatorTest {
     }
 
     /**
-     * Test for sqrt function
+     * Testing sqrt where sqrt is present multiple times
      */
     @Test
     void sqrtTest(){
-        Assertions.assertEquals(10.5,new ExpressionEvaluator().evaluate("( sqrt ( 64 ) + ( ( sqrt ( 25 ) / 2 ) ) )"));
+        assertEquals(10.5,new ExpressionEvaluator().evaluate("( sqrt ( 64 ) + ( ( sqrt ( 25 ) / 2 ) ) )"));
+    }
+
+    /**
+     * Testing sqrt where sqrt is on the end
+     */
+    @Test
+    void sqrtTest2(){
+        assertEquals(7,Math.round(new ExpressionEvaluator().evaluate(("( 2 + ( 3 + ( sqrt ( 5 ) ) ) )"))));
     }
 
     /**
@@ -122,4 +130,18 @@ class ExpressionEvaluatorTest {
             }
         });
     }
+
+    @Test
+    void exception7(){
+        assertDoesNotThrow(new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                new ExpressionEvaluator().evaluate("( 6 )");
+            }
+        });
+    }
+
+
+
+
 }
