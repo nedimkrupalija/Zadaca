@@ -6,7 +6,7 @@
 
     <groupId>ba.unsa.etf.rpr</groupId>
     <artifactId>Djikstra</artifactId>
-    <version>Ver-1.1</version>
+    <version>Ver-1.3</version>
     <dependencies>
         <dependency>
             <groupId>org.jetbrains</groupId>

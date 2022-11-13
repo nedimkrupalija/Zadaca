@@ -9,7 +9,7 @@ import java.util.Stack;
  * algorithm.
  * We assume that all expressions are in brackets, and there is no support for operator priority
  * @author Nedim Krupalija
- * @version 1.0
+ * @version 1.3
  */
 
 public class ExpressionEvaluator {
@@ -55,8 +55,9 @@ public class ExpressionEvaluator {
      */
 
     public Double evaluate(String expression){
-       Integer numCounter = 0, sqrtCounter = 0;
+       Integer numCounter = 0, sqrtCounter = 0, operatorCounter = 0;
         boolean wasSqrt=false;
+        boolean wasOperator = false;
         if(expression.isEmpty())  throw new RuntimeException("Expression empty!");
         if(!expression.substring(0,1).equals("(")) throw new RuntimeException("Expression doesn't start with bracket!");
         String[] stringArray = expression.split(" ");
@@ -69,37 +70,38 @@ public class ExpressionEvaluator {
                 try {
                     Double n = Double.parseDouble(stringArray[i]);
                 } catch (NumberFormatException e) {
-                    throw new RuntimeException("Operand is not number or unknown operator!");
+                    throw new RuntimeException("Operand is not number or known operator!");
                 }
             }
             if(stringArray[i].equals("(")) {
-                if(i<stringArray.length-1&&stringArray[i+1].equals("sqrt")) numCounter = numCounter;
-                else if(!wasSqrt) numCounter = 0;
                 opened = opened + 1 ;
-                if(wasSqrt) sqrtCounter = 0;
+
             }
             else if(isStringOperator(stringArray[i])){
                 if(wasSqrt) throw new RuntimeException("More operands than allowed!");
+                operatorCounter = operatorCounter + 1;
                 operators.push(stringArray[i]);
             }
             else if(stringArray[i].equals("sqrt")) {
                 operators.push(stringArray[i]);
+                operatorCounter = operatorCounter + 1;
+                sqrtCounter = sqrtCounter + 1;
                 wasSqrt = true;
             }
             else if(stringArray[i].equals(")")){
                 closed = closed + 1;
                 if(operators.size()==0) continue;
-                if(wasSqrt) numCounter = numCounter + 1;
-                if((wasSqrt&&sqrtCounter!=1)||(!wasSqrt&&numCounter!=2)) throw new NumberFormatException("More than allowed operands!");
+                if(numCounter-1!=operatorCounter) throw new RuntimeException("More operands than allowed!");
                 values.push(findValue(operators,values));
                 wasSqrt = false;
             }
             else{
                 values.push(Double.parseDouble(stringArray[i]));
-                if(wasSqrt) sqrtCounter = sqrtCounter + 1;
+                if(wasSqrt)  numCounter = numCounter + 2;
                 else numCounter = numCounter + 1;
             }
         }
+        if(operatorCounter!=closed) throw new RuntimeException("More operands than allowed!");
         if(opened!=closed) throw new RuntimeException("Not equal number of opened and closed brackets!");
         while(operators.size()!=0) values.push(findValue(operators,values));
         return values.pop();
@@ -114,7 +116,7 @@ public class ExpressionEvaluator {
      */
     public Double evaluateNoSpaces(String expression){
         char nextChar=' ';
-        Integer numCounter = 0, opened = 0, closed = 0, sqrtCounter = 0;
+        Integer operatorCounter = 0,numCounter = 0, opened = 0, closed = 0, sqrtCounter = 0;
         boolean wasSqrt = false;
         int j = 0;
         if(expression.length()==0) throw new RuntimeException("Expression empty!");
@@ -128,19 +130,7 @@ public class ExpressionEvaluator {
                 continue;
             }
             if(charArray[i]=='(') {
-                if(i<charArray.length-1&&charArray[i+1]==32){
-                    Integer k = i+1;
-                    Integer spaceCounter = 1;
-                    while(i<charArray.length-spaceCounter&&charArray[k]==32){
-                        k++;
-                        spaceCounter = spaceCounter + 1;
-                    }
-                    nextChar = charArray[k];
-                }
-                if(nextChar=='s') numCounter = numCounter;
-                else if(!wasSqrt) numCounter = 0;
                 opened = opened + 1;
-                if(wasSqrt) sqrtCounter = 0;
 
             }
             else if(charArray[i]=='s'){
@@ -153,11 +143,14 @@ public class ExpressionEvaluator {
                 if(sqrtCheck.equals("sqrt")) {
                     operators.push(sqrtCheck);
                     wasSqrt = true;
+                    sqrtCounter = sqrtCounter + 1;
+                    operatorCounter = operatorCounter + 1;
                 }
             }
             else if(isOperator(charArray[i])) {
                 if(wasSqrt) throw new RuntimeException("More operands than allowed!");
                 operators.push(Character.toString(charArray[i]));
+                operatorCounter = operatorCounter + 1;
             }
             else if(charArray[i]==')'){
                 closed = closed + 1;
@@ -165,8 +158,7 @@ public class ExpressionEvaluator {
                     i++;
                     continue;
                 }
-                if(wasSqrt) numCounter = numCounter + 1;
-                if((wasSqrt&&sqrtCounter!=1)||(!wasSqrt&&numCounter!=2)) throw new NumberFormatException("More operands than allowed!");
+                if(numCounter-1!=operatorCounter) throw new RuntimeException("More operands than allowed!");
                 values.push(findValue(operators,values));
                 wasSqrt = false;
             }
@@ -181,12 +173,14 @@ public class ExpressionEvaluator {
                 i--;
                 if(!num.isEmpty()){
                     values.push(Double.parseDouble(num));
-                    if(wasSqrt) sqrtCounter = sqrtCounter + 1;
-                    if(!wasSqrt) numCounter = numCounter + 1;
+                    if(wasSqrt) numCounter = numCounter + 2;
+                    else numCounter = numCounter + 1;
+
                 }
             }
             i++;
         }
+        if(operatorCounter!=closed) throw new RuntimeException("More operands than allowed!");
         if(opened!=closed) throw new RuntimeException("Not equal number of opened and closed brackets!");
         while(operators.size()!=0) values.push(findValue(operators,values));
         return values.pop();
