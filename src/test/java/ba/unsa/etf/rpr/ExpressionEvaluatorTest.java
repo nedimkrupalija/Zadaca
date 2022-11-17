@@ -60,12 +60,7 @@ class ExpressionEvaluatorTest {
      */
     @Test
     void exception1() {
-        Assertions.assertThrows(RuntimeException.class, new Executable() {
-            @Override
-            public void execute() throws Throwable {
-                new ExpressionEvaluator().evaluate("( + 8 )");
-            }
-        });
+        Assertions.assertThrows(RuntimeException.class, () -> new ExpressionEvaluator().evaluate("( + 8 )"));
     }
 
     /**
@@ -143,6 +138,14 @@ class ExpressionEvaluatorTest {
                 new ExpressionEvaluator().evaluate("( 6 )");
             }
         });
+    }
+
+    /**
+     * Sqrt can only have one operand
+     */
+    @Test
+    void exception8(){
+        assertThrows(RuntimeException.class, ()-> new ExpressionEvaluator().evaluate("( sqrt ( ( 5 + 2 ) ) )"));
     }
 
 }

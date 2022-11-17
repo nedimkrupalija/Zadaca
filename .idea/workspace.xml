@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05dfe11b-61a0-4475-bd51-b5a24bc35e2a" name="Changes" comment="Updated javaDoc comments">
+    <list default="true" id="05dfe11b-61a0-4475-bd51-b5a24bc35e2a" name="Changes" comment="Updated exception test 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/ExpressionEvaluatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/ExpressionEvaluatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,15 +76,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="All in Djikstra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Djikstra" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExpressionEvaluatorTest.exception8">
     <configuration name="ExpressionEvaluatorTest.evaluateTest2" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Djikstra" />
       <extension name="coverage">
@@ -164,21 +157,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExpressionEvaluatorTest.exception8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Djikstra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.ExpressionEvaluatorTest" />
+      <option name="METHOD_NAME" value="exception8" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.ExpressionEvaluatorTest.evaluateTest2" />
+      <item itemvalue="JUnit.ExpressionEvaluatorTest.exception8" />
       <item itemvalue="JUnit.ExpressionEvaluatorTest.exception2" />
       <item itemvalue="JUnit.ExpressionEvaluatorTest.evaluateTest3" />
       <item itemvalue="JUnit.ExpressionEvaluatorTest.exception5" />
       <item itemvalue="JUnit.ExpressionEvaluatorTest.exception7" />
-      <item itemvalue="JUnit.All in Djikstra" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExpressionEvaluatorTest.exception8" />
         <item itemvalue="JUnit.ExpressionEvaluatorTest.exception2" />
         <item itemvalue="JUnit.ExpressionEvaluatorTest.exception7" />
         <item itemvalue="JUnit.ExpressionEvaluatorTest.evaluateTest3" />
         <item itemvalue="JUnit.ExpressionEvaluatorTest.exception5" />
-        <item itemvalue="JUnit.All in Djikstra" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668697511871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated exception test 2">
+      <created>1668697627660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668697627660</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +230,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated javaDoc comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated javaDoc comments" />
+    <MESSAGE value="Updated exception test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated exception test 2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Djikstra$test_in_Djikstra.ic" NAME="test in Djikstra Coverage Results" MODIFIED="1668090392450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
