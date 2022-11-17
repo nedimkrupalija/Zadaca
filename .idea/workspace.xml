@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05dfe11b-61a0-4475-bd51-b5a24bc35e2a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/ExpressionEvaluator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/ExpressionEvaluator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/ExpressionEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/ExpressionEvaluator.java" afterDir="false" />
+    <list default="true" id="05dfe11b-61a0-4475-bd51-b5a24bc35e2a" name="Changes" comment="Updated javaDoc comments">
       <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/ExpressionEvaluatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/ExpressionEvaluatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,6 +191,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668026209166</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated javaDoc comments">
+      <created>1668697511871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668697511871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +211,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated javaDoc comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated javaDoc comments" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Djikstra$test_in_Djikstra.ic" NAME="test in Djikstra Coverage Results" MODIFIED="1668090392450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

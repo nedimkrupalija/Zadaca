@@ -76,7 +76,7 @@ class ExpressionEvaluatorTest {
         Assertions.assertThrows(RuntimeException.class, new Executable() {
             @Override
             public void execute() throws Throwable {
-                new ExpressionEvaluator().evaluate("(( 9 + 8 ) )");
+                new ExpressionEvaluator().evaluate("(9 + 8 )");
             }
 
         });
@@ -144,8 +144,5 @@ class ExpressionEvaluatorTest {
             }
         });
     }
-
-
-
 
 }
