@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="05dfe11b-61a0-4475-bd51-b5a24bc35e2a" name="Changes" comment="" />
+    <list default="true" id="05dfe11b-61a0-4475-bd51-b5a24bc35e2a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/App.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/ExpressionEvaluator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/ExpressionEvaluator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/ba/unsa/etf/rpr/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/ExpressionEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/ExpressionEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/ExpressionEvaluatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/ExpressionEvaluatorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/ExpressionEvaluator.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2HKG87Hhxgl8BwqvAZl0KS9e0Aj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -13,12 +56,150 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Nedim Krupalija/RPR/Djikstra/src/test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nedim Krupalija\RPR\Djikstra\src\test\java\ba\unsa\etf\rpr" />
+      <recent name="C:\Users\Nedim Krupalija\RPR\Djikstra\src\test" />
+      <recent name="C:\Users\Nedim Krupalija\RPR\Djikstra\src\test\java" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="java.ba.unsa.etf.rpr" />
+      <recent name="ba.unsa.etf.rpr" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn installč" />
+      <command value="mvn insts" />
+      <command value="mvn install" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="All in Djikstra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Djikstra" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpressionEvaluatorTest.evaluateTest2" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Djikstra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.ExpressionEvaluatorTest" />
+      <option name="METHOD_NAME" value="evaluateTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpressionEvaluatorTest.evaluateTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Djikstra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.ExpressionEvaluatorTest" />
+      <option name="METHOD_NAME" value="evaluateTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpressionEvaluatorTest.exception2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Djikstra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.ExpressionEvaluatorTest" />
+      <option name="METHOD_NAME" value="exception2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpressionEvaluatorTest.exception5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Djikstra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.ExpressionEvaluatorTest" />
+      <option name="METHOD_NAME" value="exception5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpressionEvaluatorTest.exception7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Djikstra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.ExpressionEvaluatorTest" />
+      <option name="METHOD_NAME" value="exception7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ExpressionEvaluatorTest.evaluateTest2" />
+      <item itemvalue="JUnit.ExpressionEvaluatorTest.exception2" />
+      <item itemvalue="JUnit.ExpressionEvaluatorTest.evaluateTest3" />
+      <item itemvalue="JUnit.ExpressionEvaluatorTest.exception5" />
+      <item itemvalue="JUnit.ExpressionEvaluatorTest.exception7" />
+      <item itemvalue="JUnit.All in Djikstra" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExpressionEvaluatorTest.exception2" />
+        <item itemvalue="JUnit.ExpressionEvaluatorTest.exception7" />
+        <item itemvalue="JUnit.ExpressionEvaluatorTest.evaluateTest3" />
+        <item itemvalue="JUnit.ExpressionEvaluatorTest.exception5" />
+        <item itemvalue="JUnit.All in Djikstra" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -29,5 +210,22 @@
       <updated>1668026209166</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Djikstra$test_in_Djikstra.ic" NAME="test in Djikstra Coverage Results" MODIFIED="1668090392450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Djikstra$App.ic" NAME="App Coverage Results" MODIFIED="1668268356513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ba.unsa.etf.rpr.*</FILTER>
+    </SUITE>
   </component>
 </project>

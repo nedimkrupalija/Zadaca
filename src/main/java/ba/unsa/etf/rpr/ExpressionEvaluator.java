@@ -21,6 +21,7 @@ public class ExpressionEvaluator {
      * @param c
      * @return
      */
+
     private boolean isNumber(char c){
         return((c>='0'&&c<='9')||c=='.');
     }
@@ -49,7 +50,8 @@ public class ExpressionEvaluator {
      * string empty exception is thrown. Function gets to first open parenthesis, ignores it and puts number
      * on stack of values. If current character math. operator it is put on operations stack.
      * When program reaches closed parenthesis if does calculation based on values stored on stack
-     * All operators are two operand, except sqrt(only one number allowed in brackets)
+     * All operators are two operand, except sqrt(only one number allowed in brackets). Brackets without operators are
+     * not allowed, in other words more brackets than necessary.
      * @param expression
      * @return
      */
@@ -188,7 +190,7 @@ public class ExpressionEvaluator {
 
 
     /**
-     * Help function for returning inc, dec, mul, od div value depending on current operator and value
+     * Help function that returns operator(value)
      * @param operators
      * @param values
      * @return
@@ -206,7 +208,7 @@ public class ExpressionEvaluator {
 
 
     /**
-     * Empty constructor that makes empty values and operators stacks
+     * Constructor for initialization of stacks
      */
     public ExpressionEvaluator() {
         this.values = new Stack<Double>();

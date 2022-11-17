@@ -1,17 +1,13 @@
 package ba.unsa.etf.rpr;
-import java.util.Scanner;
-import java.util.Stack;
+
 
 /**
  * Java main class
  * @author Nedim Krupalija
  */
 public class App {
-    private static String input;
 
     public static void main(String[] args) {
-        Stack<String> operators = new Stack<String>();
-        Stack<Double> values = new Stack<Double>();
         String input =  args[0];
         ExpressionEvaluator evaluator2 = new ExpressionEvaluator();
         ExpressionEvaluator evaluator = new ExpressionEvaluator();
