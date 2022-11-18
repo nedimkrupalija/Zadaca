@@ -72,7 +72,7 @@ public class ExpressionEvaluator {
                 try {
                     Double n = Double.parseDouble(stringArray[i]);
                 } catch (NumberFormatException e) {
-                    throw new RuntimeException("Operand is not number or known operator!");
+                    throw new RuntimeException("Input string cannot be parsed!!");
                 }
             }
             if(stringArray[i].equals("(")) {
